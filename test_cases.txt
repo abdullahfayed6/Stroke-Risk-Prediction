@@ -1,0 +1,41 @@
+Test Case 1: High Risk Patient
+-----------------------------
+Input:
+- Gender: Male
+- Age: 65
+- Hypertension: Yes (1)
+- Heart Disease: Yes (1)
+- Ever Married: Yes
+- Work Type: Private
+- Residence Type: Urban
+- Average Glucose Level: 200.5
+- BMI: 32.1
+- Smoking Status: Currently Smokes
+
+Test Case 2: Medium Risk Patient
+------------------------------
+Input:
+- Gender: Female
+- Age: 50
+- Hypertension: Yes (1)
+- Heart Disease: No (0)
+- Ever Married: Yes
+- Work Type: Self-employed
+- Residence Type: Rural
+- Average Glucose Level: 150.2
+- BMI: 26.8
+- Smoking Status: Formerly Smoked
+
+Test Case 3: Low Risk Patient
+---------------------------
+Input:
+- Gender: Female
+- Age: 35
+- Hypertension: No (0)
+- Heart Disease: No (0)
+- Ever Married: Yes
+- Work Type: Private
+- Residence Type: Urban
+- Average Glucose Level: 90.8
+- BMI: 24.3
+- Smoking Status: Never Smoked
