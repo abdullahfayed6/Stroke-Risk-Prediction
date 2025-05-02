@@ -65,5 +65,3 @@ For detailed model comparison and technical information, see [Model Comparison](
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-"# Stroke-Risk-Prediction" 
