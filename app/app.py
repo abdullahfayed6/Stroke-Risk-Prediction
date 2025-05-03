@@ -168,7 +168,7 @@ if page == translations[language]["home"]:
     st.markdown(f'<h1 class="center-text">{translations[language]["title"]}</h1>', unsafe_allow_html=True)
     st.markdown(f'<p class="center-text">{translations[language]["input_prompt"]}</p>', unsafe_allow_html=True)
 
-    # Gender selection with icons
+    # Gender selection 
     gender = st.radio(
         translations[language]["gender"],
         [translations[language]["male"], translations[language]["female"]],
@@ -178,7 +178,7 @@ if page == translations[language]["home"]:
     # Age input
     age = st.number_input(f" {translations[language]['age']}", min_value=0, max_value=100, value=30)
 
-    # Medical conditions with icons
+    # Medical conditions 
     
     hypertension = st.radio(
         f"{translations[language]['hypertension']}", 
@@ -191,13 +191,13 @@ if page == translations[language]["home"]:
         [0, 1],
         format_func=lambda x: "No" if x == 0 else "Yes"
     )
-    # Marital status with icons
+    # Marital status 
     ever_married = st.radio(
         f"{translations[language]['ever_married']}", 
         [translations[language]["no"], translations[language]["yes"]]
     )
 
-    # Work type with icons and descriptions
+    # Work type
     work_options = {
         translations[language]["private"]: "Private Sector Employee",
         translations[language]["self_employed"]: "Self Employed / Business Owner",
@@ -211,14 +211,14 @@ if page == translations[language]["home"]:
         format_func=lambda x: work_options[x]
     )
 
-    # Residence type with icons
+    # Residence type 
     residence = st.radio(
         f" {translations[language]['residence_type']}", 
         [translations[language]["urban"], translations[language]["rural"]],
         format_func=lambda x: f" {x}" if x == translations[language]["urban"] else f"{x}"
     )
 
-    # Health metrics with icons
+    # Health metrics 
     glucose = st.number_input(f" {translations[language]['avg_glucose_level']}", min_value=0.0, max_value=300.0, value=100.0)
     weight = st.number_input(f"{translations[language]['weight']}", min_value=1.0, max_value=200.0, value=70.0)
     height = st.number_input(f"{translations[language]['height']}", min_value=50.0, max_value=250.0, value=170.0)
@@ -239,7 +239,7 @@ if page == translations[language]["home"]:
         </div>
         """, unsafe_allow_html=True)
 
-    # Smoking status with icons
+    # Smoking status 
     smoking_options = {
         translations[language]["never_smoked"]: "Never Smoked",
         translations[language]["formerly_smoked"]: "Formerly Smoked",
